@@ -1,0 +1,218 @@
+@charset 'UTF-8'; // set encoding to most common type
+
+
+/* SCSS utilities
+   ========================================================================== */
+
+/**
+ * 1 - mixins and scss functions
+ * 2 - variables
+ * 3 - media breakpoints/media mixins
+ */
+
+@import 'utils/media-queries'; /* 1 */
+@import 'utils/vars'; /* 2 */
+@import 'utils/mixins'; /* 3 */
+
+/* Complex reset
+   ========================================================================== */
+
+/**
+ * 1 - normalize.css https://github.com/necolas/normalize.css/
+ * 2 - my custom reset file
+ */
+
+@import 'normalize.css'; /* 1 */
+@import 'utils/custom-reset'; /* 2 */
+
+/* Fonts
+   ========================================================================== */
+
+/**
+ * 1 - font mixins
+ */
+
+@import 'utils/fonts'; /* 1 */
+
+/* Support
+   ========================================================================== */
+ 
+/**
+ * 1 - main/root/utilities tags
+ * 2 - styles for print
+ */
+@import 'utils/layouts'; /* 1 */
+@import 'utils/print'; /* 2 */
+
+
+
+/* Objects/blocks
+   ========================================================================== */
+
+// @import 'objects/common/button';
+// @import 'objects/common/input';
+// @import 'objects/common/link';
+// @import 'objects/common/title';
+
+
+// @import 'objects/common/header';
+// @import 'objects/common/footer';
+
+
+
+
+/* Styles
+   ========================================================================== */
+
+body {
+
+   font-family: var(--f-family-global);
+   line-height: var(--f-lh-global);
+   color: var(--f-color-global);
+
+   @include laptop-big {
+      //  font-size: 14px;
+   }
+   @include laptop {
+      //  font-size: 14px;
+   }
+   @include tablet {
+      //  font-size: 12px;       
+   }
+   @include phone-big {
+      //  font-size: 14px;       
+   }
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    // background: url('../img/keycloak-bg.png') center center/cover no-repeat;
+    background: linear-gradient(180deg,#92ebff,#ffaaf6);
+}
+
+
+.form {
+    padding: 20px 0 0 0;
+
+    margin: 0 auto;
+    box-shadow: 0 0.1875rem 0.4375rem 0.1875rem rgba(3, 3, 3, 0.13), 0 0.6875rem 1.5rem 1rem rgba(3, 3, 3, 0.12);
+    max-width: 500px;
+    width: 100%;
+    border-top: 4px solid;
+    border-color: #06c;
+    
+    background: #fff;
+
+    &_naked {
+        padding-bottom: 35px;
+    }
+
+    &__body {
+        padding: 0 40px;
+    }
+
+    &__title {
+        margin: 20px 0;
+        font-weight: 300;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    &__btn {
+
+        display: block;
+
+        width: 100%;
+        padding: 6px 16px;
+        border-radius: 1px;
+        
+        background: #06c;
+
+        font-weight: 500;
+        font-size: 14px;
+        color: #fff;
+        
+        cursor: pointer;
+    }
+
+
+    &__footer {
+        margin-top: 20px;
+
+        background: #000;
+
+        color: #72767b;
+    }
+
+    &__footer-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 13px;
+        padding: 15px 35px;
+        background-color: #F0F0F0;
+    }
+
+    &__footer-link {
+        margin-left: 10px;
+        text-decoration: none;
+        color: #0088ce;
+    }
+}
+
+
+.input {
+
+    &__group {
+        margin-bottom: 15px;
+    }
+
+    &__label {
+        display: block;
+
+        font-size: 12px;
+        line-height: calc(20/12);
+        font-weight: normal;
+        color: rgb(54, 54, 54);
+
+    }
+    &__input {
+        display: block;
+
+        width: 100%;
+        padding: 5px 8px;
+        
+        border: 2px solid rgb(237, 237, 237);
+        
+        background-color: rgb(255, 255, 255);
+
+        color: rgb(21, 21, 21);
+        font-size: 14px;
+
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) all .2s;
+
+        &[data-status=default] {
+            border-bottom: 2px solid rgb(138, 141, 144);
+            color: rgb(21, 21, 21);
+        }
+        &[data-status=invalid] {
+            border-bottom: 2px solid rgb(255, 127, 118);
+            color: rgb(21, 21, 21);
+        }
+        &[data-status=valid] {
+            border-bottom: 2px solid rgb(20, 172, 0);
+            color: rgb(21, 21, 21);
+        }
+    }
+}
+
+
+
+
+

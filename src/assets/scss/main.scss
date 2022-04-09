@@ -1,0 +1,279 @@
+@charset 'UTF-8'; // set encoding to most common type
+
+
+/* SCSS utilities
+   ========================================================================== */
+
+/**
+ * 1 - mixins and scss functions
+ * 2 - variables
+ * 3 - media breakpoints/media mixins
+ */
+
+@import 'utils/media-queries';
+/* 1 */
+@import 'utils/vars';
+/* 2 */
+@import 'utils/mixins';
+/* 3 */
+
+/* Complex reset
+   ========================================================================== */
+
+/**
+ * 1 - normalize.css https://github.com/necolas/normalize.css/
+ * 2 - my custom reset file
+ */
+
+@import 'normalize.css';
+/* 1 */
+@import 'utils/custom-reset';
+/* 2 */
+
+/* Fonts
+   ========================================================================== */
+
+/**
+ * 1 - font mixins
+ */
+
+@import 'utils/fonts';
+/* 1 */
+
+/* Support
+   ========================================================================== */
+
+/**
+ * 1 - main/root/utilities tags
+ * 2 - styles for print
+ */
+@import 'utils/layouts';
+/* 1 */
+@import 'utils/print';
+/* 2 */
+
+
+
+/* Objects/blocks
+   ========================================================================== */
+
+// @import 'objects/common/button';
+// @import 'objects/common/input';
+// @import 'objects/common/link';
+// @import 'objects/common/title';
+
+
+// @import 'objects/common/header';
+// @import 'objects/common/footer';
+
+
+
+
+/* Styles
+   ========================================================================== */
+
+body {
+
+   font-family: var(--f-family-global);
+   line-height: var(--f-lh-global);
+   color: var(--f-color-global);
+
+   @include laptop-big {
+      //  font-size: 14px;
+   }
+
+   @include laptop {
+      //  font-size: 14px;
+   }
+
+   @include tablet {
+      //  font-size: 12px;       
+   }
+
+   @include phone-big {
+      //  font-size: 14px;       
+   }
+}
+
+
+#app {
+   display: flex;
+   flex-direction: column;
+
+   min-height: 100vh;
+   width: 100vw;
+   overflow-x: hidden;
+
+   background-image: linear-gradient(315deg,#a2a2ff,#f0ffcb 74%);
+}
+
+.header {
+   position: relative;
+   padding: 0;
+
+   height: 60px;
+
+   background-color: #424242;
+
+   .container {
+      height: 100%;
+   }
+}
+
+.navbar {
+   display: flex;
+   align-items: center;
+
+   height: 100%;
+   padding: 5px 35px;
+
+   font-size: 1rem;
+   font-weight: 400;
+
+   &__collapse {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      flex-basis: auto;
+   }
+
+   &__item,
+   &__link {
+      padding: 7.5px;
+      list-style: none;
+
+      font-size: 15px;
+      color: #fff;
+   }
+}
+
+.logo {
+   height: 100%;
+   margin-right: 15px;
+
+   img {
+      height: 100%;
+      width: auto;
+   }
+}
+
+.p-main {
+   .main {
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1 1;
+
+      width: 100%;
+
+      &__logo {
+         margin-top: 3vh;
+         height: 70px;
+      }
+
+      &__text {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-top: 10px;
+         margin-bottom: 3vh;
+
+         width: 400px;
+         text-align: center;
+         font-size: 1.2rem;
+         color: #232323;
+         font-weight: 600;
+         line-height: 1.3;
+      }
+
+      &__btn {
+         font-size: 1.5rem;
+         color: #fff;
+         font-weight: 600;
+         padding: 10px;
+         margin-left: auto;
+         margin-right: auto;
+         text-align: center;
+         width: 280px;
+         border-radius: 10px;
+         background: linear-gradient(270deg, #48d4f4, #ff27e7);
+         background-size: 400% 400%;
+         animation: styles_animateText__1fqI3 5s ease infinite;
+         cursor: pointer;
+         // transition: .8s ease;
+      }
+
+      &__status {
+         margin-top: 50px;
+
+         font-size: 14px;
+         color: #fff;
+         text-align: center;
+         font-weight: 500;
+      }
+
+      &__logout-btn {
+         width: 100px;
+         padding: 7px 6px;
+         border-radius: 5px;
+         margin-top: 10px;
+
+         font-size: 14px;
+
+         animation: styles_animateText 7s ease infinite;
+      }
+
+      &__img-wrapper {
+         flex-grow: 1;
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-end;
+      }
+
+      &__img {
+         height: 50vh
+      }
+   }
+}
+
+@keyframes styles_animateText {
+   0% {
+      background-position: 0 50%
+   }
+
+   50% {
+      background-position: 100% 50%
+   }
+
+   to {
+      background-position: 0 50%
+   }
+}
+
+.footer {
+   min-height: 100px;
+
+   color: #fff;
+   font-size: 1.1rem;
+   font-weight: 400;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   background-color: #8db9e6;
+
+   text-align: center;
+}
+
+
+
+// Academy page
+.academy-page {
+
+   .main {}
+}

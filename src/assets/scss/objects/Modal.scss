@@ -1,0 +1,94 @@
+// CSS for Modal Class
+
+@import '../utils/media-queries';
+@import '../utils/vars';
+
+.overflow {
+    position: fixed;
+    inset: -50px;
+    z-index: 1000;
+
+    display: none;
+    ;
+}
+
+.overflowEvent {
+    position: absolute;
+    inset: 0;
+    z-index: 1001;
+
+    background: rgba(0, 0, 0, .3);
+
+    cursor: pointer;
+
+    opacity: 0;
+}
+
+
+.modal-welcome {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1010;
+
+    width: 100%;
+    max-width: 400px;
+    padding: 40px 30px;
+    border-radius: 10px;
+
+    background: #fff;
+
+    transform: translate(-50%, -50%);
+
+    @include phone-big {
+        max-width: calc(100vw - 50px);
+        padding: 20px;
+    }
+}
+
+.modal-title {
+    margin-bottom: 30px;
+
+    font-size: 28px;
+
+}
+
+.modal-text {
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    color: #000;
+    line-height: calc(18/14)
+}
+
+.modal-link {
+    display: inline-block;
+
+    padding: 10px 20px;
+    border-radius: 5px;
+
+    background: linear-gradient(270deg, #48d4f4, #ff27e7);
+
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+
+    animation: styles_animate 7s ease infinite;
+}
+
+
+@keyframes styles_animate {
+    0% {
+        background-position: 0 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    to {
+        background-position: 0 50%
+    }
+}

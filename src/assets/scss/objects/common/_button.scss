@@ -1,0 +1,75 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 170px;
+    padding: 12px 20px;
+    border-radius: 3px;
+
+    background: var(--c-button);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;    
+    text-align: center;
+    color: #FFFFFF;
+
+    @include laptop {
+        width: 150px;
+        padding: 10px 10px;
+    }
+    @include tablet {
+        padding: 7px 10px;
+    }
+
+    &:hover, &:focus {
+        background: var(--c-button-focus);
+        transition: all .2s ease;
+    }
+
+    &:active {
+        background: var(--c-button-active);
+        transition: all .2s ease;
+    }
+
+    &_small {
+        width: 130px;
+        padding: 8px 20px;
+
+        @include laptop {
+            width: 110px;
+            padding: 7px 15px;
+        }
+        @include tablet {
+            width: 100px;
+            padding: 5px 15px;
+        }
+    }
+
+    &_unfilled {
+        background: transparent;
+        border: solid 1px #fff;
+    }
+
+    &__text {
+        font-weight: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        letter-spacing: inherit;
+        color: inherit;
+        white-space: nowrap;
+    }
+
+    &_reverse {
+        color: #1C1B1E;
+        border: 1px solid #1C1B1E;
+
+        &:hover {
+            color: #fff;
+            border: 1px solid #fff;
+
+            transition: border .1s ease;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.link {
+    color: #9224D6;
+
+    &:hover, &:focus {
+        color: #c465ff;
+
+        transition: all .3s ease;
+
+        svg {
+            fill: currentColor;
+
+            transition: all .3s ease;
+        }
+    }
+    &:active {
+        color: #721da7;
+
+        svg {
+            fill: currentColor;
+        }
+    }
+
+    svg {
+        fill: #9224D6;
+    }
+}

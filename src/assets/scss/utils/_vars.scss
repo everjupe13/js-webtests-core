@@ -1,0 +1,119 @@
+$c-primary1                 : #9224d6;
+$c-primary1-d               : #7a20b3;
+$c-primary1-dd              : #6d1aa1;
+$c-primary2                 : #bd87de;
+$c-primary2-d               : #ae6fd4;
+$c-primary2-dd              : #9367af;
+
+$c-additional1              : #339DCC;
+$c-additional2              : #33C1D4;
+$c-additional3              : #62B7D8;
+$c-additional4              : #98C2D1;
+$c-additional5              : #C9E4E8;
+
+$c-secondary1               : #4E1A3D;
+$c-secondary2               : #ED1556;
+$c-secondary3               : #72C64B;
+$c-secondary4               : #05E0E9;
+
+
+// Optional
+$c-success                  : #26de81;
+$c-danger                   : #fc5c65;
+$c-active                   : #05a1e9;
+$c-warning                  : #fed330;
+$c-disabled                 : #999999;
+
+
+// Dark shades
+$c-dark1                    : #000000;
+$c-dark3                    : #222222;
+$c-dark2                    : #3d3d3d;
+
+// Light shades
+$c-bright1                  : #ffffff;
+$c-bright2                  : #F3F7F8;
+$c-bright3                  : #e0e2e2;
+
+
+// Borders color
+$c-border1                  : #DCDFE6;
+$c-border2                  : #DCDFE6;
+$c-border3                  : #E4E7ED;
+$c-border4                  : #EBEEF5;
+
+// Buttons color
+$c-button                 : var(--c-primary1);
+$c-button-focus           : var(--c-primary2);
+$c-button-active          : var(--c-primary2-d);
+
+
+// General project settings, so for the most high-level configuration. (global-variables, custom properties)
+$f-family-global   : 'Poppins', Roboto, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+$f-family-default    : -apple-system, BlinkMacSystemFont, Roboto, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+$f-family-courier   : 'Courier New', Courier, monospace;
+
+$f-weight-global    : 400;
+$f-size-global      : 16px;
+$f-lh-global        : 1.4;
+$f-color-global     : #000000;
+
+
+:root {
+
+    // Font variables
+    --f-family-global: #{$f-family-global};
+    --f-family-default: #{$f-family-default};
+    --f-family-courier: #{$f-family-courier};
+
+    --f-weight-global: #{$f-weight-global};
+    --f-size-global: #{$f-size-global};
+    --f-color-global: #{$f-color-global};
+    --f-lh-global: #{$f-lh-global};
+
+
+    // Colors variables
+    --c-primary1: #{$c-primary1};
+    --c-primary1-d: #{$c-primary1-d};
+    --c-primary1-dd: #{$c-primary1-dd};
+
+    --c-primary2: #{$c-primary2};
+    --c-primary2-d: #{$c-primary2-d};
+    --c-primary2-dd: #{$c-primary2-dd};
+
+    --c-secondary1: #{$c-secondary1};
+    --c-secondary2: #{$c-secondary2};
+    --c-secondary3: #{$c-secondary3};
+    --c-secondary4: #{$c-secondary4};
+
+    --c-additional1: #{$c-additional1};
+    --c-additional2: #{$c-additional2};
+    --c-additional3: #{$c-additional3};
+    --c-additional4: #{$c-additional4};
+    --c-additional5: #{$c-additional5};
+
+    --c-success: #{$c-success};
+    --c-danger: #{$c-danger};
+    --c-active: #{$c-active};
+    --c-warning: #{$c-warning};
+    --c-disabled: #{$c-disabled};
+
+    --c-dark1: #{$c-dark1};
+    --c-dark2: #{$c-dark2};
+    --c-dark3: #{$c-dark3};
+
+    --c-bright1: #{$c-bright1};
+    --c-bright2: #{$c-bright2};
+    --c-bright3: #{$c-bright3};
+
+    --c-border1: #{$c-border1};
+    --c-border2: #{$c-border2};
+    --c-border3: #{$c-border3};
+    --c-border4: #{$c-border4};
+
+
+    --c-button: #{$c-button};
+    --c-button-focus: #{$c-button-focus};
+    --c-button-active: #{$c-button-active};
+    
+}

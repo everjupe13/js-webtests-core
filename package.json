@@ -1,0 +1,40 @@
+{
+    "name": "untitled",
+    "version": "0.1.0",
+    "description": "lighweight vite bundler",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "author": "https://github.com/everjupe13",
+    "keywords": [
+        "html",
+        "css",
+        "javascript",
+        "vite",
+        "vue",
+        "aos",
+        "gsap"
+    ],
+    "devDependencies": {
+        "@vitejs/plugin-legacy": "^1.4.4",
+        "@vitejs/plugin-vue": "^2.2.0",
+        "autoprefixer": "^10.3.1",
+        "cssnano": "^5.0.6",
+        "sass": "^1.35.2",
+        "vite": "^2.4.0",
+        "vite-plugin-html": "^2.0.7",
+        "vite-plugin-imagemin": "^0.6.1"
+    },
+    "dependencies": {
+        "@popperjs/core": "^2.11.2",
+        "aos": "^2.3.4",
+        "axios": "^0.26.1",
+        "swiper": "^6.8.0",
+        "tippy.js": "^6.3.7",
+        "vue": "^3.2.25",
+        "vue-axios": "^3.4.1",
+        "vue-the-mask": "^0.11.1"
+    }
+}

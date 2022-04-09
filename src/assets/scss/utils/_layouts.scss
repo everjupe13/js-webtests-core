@@ -1,0 +1,47 @@
+.section {
+    position: relative;
+
+    padding-top: var(--section-padding-top);
+    padding-bottom: var(--section-padding-bottom);
+
+    --section-padding-top: 50px;
+    --section-padding-bottom: 50px;
+    
+    @include laptop {
+        --section-padding-top: 30px;
+        --section-padding-bottom: 40px;
+    }
+    @include tablet {
+        --section-padding-top: 20px;
+        --section-padding-bottom: 30px;
+    }
+
+    &_fls {
+        min-height: 100vh;
+    }
+}
+
+.container {
+    position: relative;
+
+    width: 100%;
+    max-width: #{$xxl-container};
+    margin: 0 auto;
+    padding: 0 12px;
+    
+    @include laptop-big {
+        max-width: #{$xl-container}
+    }
+    @include laptop {
+        max-width: #{$lg-container}
+    }
+    @include tablet {
+        max-width: #{$md-container}
+    }
+    @include phone-big {
+        max-width: #{$sm-container}
+    }
+    @include phone {
+        max-width: #{$xs-container}
+    }
+}
