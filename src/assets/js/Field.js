@@ -1,10 +1,13 @@
 export default class Field {
     constructor(obj) {
 
-
+        this.test = obj.test
         if (Object.prototype.hasOwnProperty.call(obj, 'timer')) {
             this.renderTimer(obj.timer)
         }
+
+
+        this.initBoard()
     }
 
     renderTimer(el) {
@@ -22,6 +25,10 @@ export default class Field {
             updateOut()
 
         }, 1000)
+    }
+
+    initBoard() {
+        
     }
 
     setQuestion() {
