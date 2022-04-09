@@ -104,7 +104,7 @@ body {
    width: 100vw;
    overflow-x: hidden;
 
-   background-image: linear-gradient(315deg,#a2a2ff,#f0ffcb 74%);
+   background-image: linear-gradient(315deg, #a2a2ff, #f0ffcb 74%);
 }
 
 .header {
@@ -211,7 +211,7 @@ body {
          margin-top: 50px;
 
          font-size: 14px;
-         color: #fff;
+         color: #000;
          text-align: center;
          font-weight: 500;
       }
@@ -270,10 +270,92 @@ body {
    text-align: center;
 }
 
+.p-inner {
+   .container-fl {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+   }
+   .header {
+      background: rgba(0, 0, 0, 0.7);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(3.5px);
+      -webkit-backdrop-filter: blur(3.5px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+   }
 
+   .main {
+      flex-grow: 1;
+
+      padding: 0 30px;
+      padding-top: 60px;
+
+      background: rgba(255, 255, 255, 0.7);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(3.5px);
+      -webkit-backdrop-filter: blur(3.5px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+   }
+
+   .btn {
+      display: inline-block;
+      margin: 0 auto;
+      padding: 12px 32px;
+      border-radius: 25px;
+
+      background: rgb(120, 180, 66);
+
+      font-size: 14px;
+      box-shadow: 0 5px 5px 0 rgb(0 0 0 / 10%);
+      color: #fff;
+      
+      cursor: pointer;
+   }
+}
+
+.banner {
+   position: relative;
+   height: 100px;
+   border-radius: 5px;
+   background-color: #424242;
+
+   &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 1;
+
+      display: block;
+
+      width: 140px;
+      height: 140px;
+      border-radius: 100%;
+
+      background-color: #fff;
+      box-shadow: 0 0 6px rgba(0, 0, 0, .3);
+
+      transform: translate(-50%, -50%)
+   }
+
+   &__img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 2;
+
+      width: 70px;
+
+      transform: translate(-50%, -50%);
+   }
+}
 
 // Academy page
 .academy-page {
+}
 
-   .main {}
+.field-page {
+   .main {
+      padding: 40px 15px 0;
+   }
 }

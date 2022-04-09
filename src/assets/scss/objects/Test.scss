@@ -1,0 +1,42 @@
+.tests {}
+
+.test-wrapper {
+    margin-top: 100px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 275px);
+    grid-auto-columns: 340px;
+    gap: 15px;
+}
+
+.test-card {
+    width: 275px;
+    height: 340px;
+    border-radius: 5px;
+
+    background-color: #fff;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .2);
+
+    &__title {
+        margin-top: 15px;
+        font-size: 24px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 200;
+        color: #434242;
+    }
+
+    &__btn {
+        display: block !important;
+        margin-top: 30px !important;
+        width: max-content;
+    }
+
+    &__progress {
+        display: block;
+        margin-top: 20px;
+        font-size: 14px;
+        color: rgba(23, 23, 23);
+        text-align: center;
+    }
+}

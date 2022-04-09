@@ -1,0 +1,60 @@
+.field-wrapper {
+    display: grid;
+    grid-template-columns: 55px 580px auto;
+    grid-gap: 20px;
+}
+
+.field {
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        height: 100%;
+        border-radius: 10px;
+        background: #fff;
+
+        span {
+            padding: 5px;
+            color: green;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 15px;
+        }
+    }
+
+    &__canvas {
+        height: 800px;
+        border-radius: 10px;
+
+        background: url('../assets/img/field-back.svg');
+
+        overflow: hidden;
+    }
+
+    &__widget {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+        padding: 15px;
+
+        background: #fff;
+        border-radius: 10px;
+    }
+
+    &__widget-btn {
+        width: 100%;
+        border-radius: 5px !important;
+        height: 70px;
+    }
+
+    &__widget-timer {
+        text-align: center;
+        font-size: 20px;
+        color: rgba(23, 23, 23);
+        margin-bottom: 20px;
+    }
+}

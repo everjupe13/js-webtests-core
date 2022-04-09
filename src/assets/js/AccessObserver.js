@@ -28,8 +28,10 @@ export class AccessObserver {
             })
         }
 
-        if (this.page === 'login' || this.page === 'registration') {
-            this.locateTo('/academy')
+        if (this.authData.isAuth) {
+            if (this.page === 'login' || this.page === 'registration') {
+                return this.locateTo('/academy')
+            }
         }
 
         console.log('this page is allowed due to the privacy settings')

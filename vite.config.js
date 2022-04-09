@@ -9,7 +9,7 @@ import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
   root: './src',
-  base: '/', /* for static site use '' or './', default is '/' */
+  base: './', /* for static site use '' or './', default is '/' */
   plugins: [
     // minifyHtml(),
     // legacy({ 
@@ -55,6 +55,9 @@ export default defineConfig({
         main: `${path.resolve(__dirname, 'src')}/index.html`,
         login: `${path.resolve(__dirname, 'src')}/login.html`,
         registration: `${path.resolve(__dirname, 'src')}/registration.html`,
+        field: `${path.resolve(__dirname, 'src')}/field.html`,
+        cabinet: `${path.resolve(__dirname, 'src')}/cabinet.html`,
+        academy: `${path.resolve(__dirname, 'src')}/academy.html`,
       },
       output: {
         entryFileNames: `assets/js/[name].js`,

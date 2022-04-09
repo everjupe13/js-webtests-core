@@ -26,16 +26,13 @@ if (auth.isAuth) {
 
     logoutBtn.classList.add('main__btn')
     logoutBtn.classList.add('main__logout-btn')
-    loggedText.parentElement.append(logoutBtn)
+    loggedText.parentElement.insertBefore(logoutBtn, loggedText.nextSibling)
 
     logoutBtn.addEventListener('click', () => {
         user.logout()
         location.reload()
     })
 
-
-    let btn = document.querySelector('.main__btn')
-    btn.addEventListener('click', () => {locateLogin()})
 
 
     let modal = new Modal()

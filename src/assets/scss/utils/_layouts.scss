@@ -25,12 +25,12 @@
     position: relative;
 
     width: 100%;
-    max-width: #{$xxl-container};
+    max-width: #{$lg-container};
     margin: 0 auto;
     padding: 0 12px;
     
     @include laptop-big {
-        max-width: #{$xl-container}
+        max-width: #{$lg-container}
     }
     @include laptop {
         max-width: #{$lg-container}
