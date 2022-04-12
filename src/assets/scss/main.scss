@@ -348,6 +348,29 @@ body {
 
       transform: translate(-50%, -50%);
    }
+
+   &__info {
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      height: 100%;
+      padding: 10px;
+   }
+
+   &__grade {
+      font-size: 24px;
+      color: #fff;
+   }
+
+   &__back {
+      color: #fff;
+
+      &:hover {
+         text-decoration: underline;
+      }
+   }
 }
 
 // Academy page
@@ -357,5 +380,22 @@ body {
 .field-page {
    .main {
       padding: 40px 15px 0;
+   }
+}
+
+
+.tests-page {
+
+   .test-wrapper {
+      grid-auto-rows: 250px;
+   }
+
+   .test-card {
+      padding: 20px 20px 30px;
+      height: 250px;
+      &__title {
+         font-size: 20px;
+         text-transform: none;
+      }
    }
 }

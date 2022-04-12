@@ -18,16 +18,29 @@
 
         span {
             padding: 5px;
-            color: green;
             cursor: pointer;
             font-weight: 700;
             font-size: 15px;
+            color: #9c9c9c;
+
+            &.active {
+                color: #000;
+            }
+
+            &.wrong {
+                color: red;
+            }
+
+            &.right {
+                color: green;
+            }
         }
     }
 
     &__canvas {
-        height: 800px;
+        min-height: 800px;
         border-radius: 10px;
+        padding: 20px;
 
         background: url('./assets/img/field-back.svg');
 
@@ -56,5 +69,9 @@
         font-size: 20px;
         color: rgba(23, 23, 23);
         margin-bottom: 20px;
+    }
+
+    &__out {
+        cursor: pointer;
     }
 }

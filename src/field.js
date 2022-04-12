@@ -1,11 +1,12 @@
 import './assets/scss/main.scss'
+import './assets/scss/objects/Modal.scss'
 import './assets/scss/objects/Test.scss'
 import './assets/scss/objects/Field.scss'
 
 
 import { AccessObserver } from './assets/js/AccessObserver';
 import Auth from './assets/js/Auth'
-import User from './assets/js/User'
+import Modal from './assets/js/Modal';
 import Field from './assets/js/Field'
 import Test from './assets/js/Test'
 
@@ -26,18 +27,19 @@ let params = window
             return p;
         },
         {}
-    );
+    )
 
-
-
-
+let getGrade = params['grade'] || 1
+let getTid = params['tid'] || 0
 let test = new Test({
-    grade: params['grade'],
-    tid: params['tid']
+    grade: getGrade,
+    tid: getTid
 })
-
+let modal = new Modal()
 let field = new Field({
     test: test,
-    timer: document.getElementById('field-timer')
+    timer: document.getElementById('field-timer'),
+    modal: modal
 })
+
 
