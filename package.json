@@ -24,11 +24,11 @@
         "cssnano": "^5.0.6",
         "sass": "^1.35.2",
         "vite": "^2.4.0",
-        "vite-plugin-html": "^2.0.7",
-        "vite-plugin-imagemin": "^0.6.1"
+        "vite-plugin-html": "^2.0.7"
     },
     "dependencies": {
         "@popperjs/core": "^2.11.2",
+        "@shopify/draggable": "^1.0.0-beta.8",
         "aos": "^2.3.4",
         "axios": "^0.26.1",
         "swiper": "^6.8.0",

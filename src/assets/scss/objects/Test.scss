@@ -1,3 +1,4 @@
+@import '../utils/media-queries.scss';
 .test {
 
     &__title {
@@ -23,6 +24,8 @@
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 20px;
+
+        user-select: none;
     }
 
     &__answers-item {
@@ -40,6 +43,11 @@
         background: #fff;
 
         cursor: pointer;
+        user-select: none;
+
+        @include phone-big {
+            width: 100%;
+        }
 
         &.checked {
             box-shadow: inset 0 0 0 8px #45b7d6;
@@ -49,6 +57,8 @@
     }
 }
 
+
+
 .test-wrapper {
     margin-top: 100px;
 
@@ -56,6 +66,12 @@
     grid-template-columns: repeat(auto-fill, 275px);
     grid-auto-columns: 340px;
     gap: 15px;
+
+    @include phone-big {
+        width: max-content;
+        margin-left: auto; 
+        margin-right: auto;
+    }
 }
 
 .test-card {
@@ -88,4 +104,8 @@
         color: rgba(23, 23, 23);
         text-align: center;
     }
+}
+
+#test-answers-draggable .test__answers-item {
+    width: 100%;
 }

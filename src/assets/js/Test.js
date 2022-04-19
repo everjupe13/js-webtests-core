@@ -26,6 +26,30 @@ export default class Test {
                 questions: [
                     {
                         qid: 0,
+                        title: 'Расставь цифры в порядке убывания',
+                        correct: '4321',
+                        type: 'drag',
+                        answ: [
+                            {
+                                id: 0,
+                                value: '3',
+                            },
+                            {
+                                id: 1,
+                                value: '1',
+                            },
+                            {
+                                id: 2,
+                                value: '4',
+                            },
+                            {
+                                id: 3,
+                                value: '2',
+                            },
+                        ]
+                    },
+                    {
+                        qid: 1,
                         title: 'Сколько фруктов изображено на картинке?',
                         img: 't1-0.png',
                         correct: 2,
@@ -49,7 +73,7 @@ export default class Test {
                         ]
                     },
                     {
-                        qid: 1,
+                        qid: 2,
                         title: 'Сколько рыбок плывет налево?',
                         img: 't1-1.png',
                         correct: 2,
@@ -73,7 +97,7 @@ export default class Test {
                         ]
                     },
                     {
-                        qid: 2,
+                        qid: 3,
                         title: 'Какая по счёту планета Сатурн, если считать слева направо?',
                         img: 't1-2.png',
                         correct: 2,
@@ -97,7 +121,7 @@ export default class Test {
                         ]
                     },
                     {
-                        qid: 3,
+                        qid: 4,
                         title: 'Кто из зверей стоит вторым, если начинать считать с волка?',
                         img: 't1-3.png',
                         correct: 2,
@@ -121,7 +145,7 @@ export default class Test {
                         ]
                     },
                     {
-                        qid: 4,
+                        qid: 5,
                         title: 'Выбери верные утверждения.',
                         img: 't1-4.png',
                         correct: 2,
@@ -145,7 +169,7 @@ export default class Test {
                         ]
                     },
                     {
-                        qid: 5,
+                        qid: 6,
                         title: 'Катя сидит в зрительном зале кинотеатра. Определи её место.',
                         img: 't1-5.png',
                         correct: 1,
@@ -334,6 +358,70 @@ export default class Test {
                             },                                
                         ]
                     },
+                    {
+                        qid: 2,
+                        title: 'Дима, Коля и Петя принимали участие в соревнованиях по плаванию. Кто занял первое место, если Дима приплыл к финишу раньше, чем Коля, а Петя раньше, чем Дима?',
+                        img: 't3-2.png',
+                        correct: 2,
+                        answ: [
+                            {
+                                id: 0,
+                                value: 'Коля'
+                            },
+                            {
+                                id: 1,
+                                value: 'Дима'
+                            },
+                            {
+                                id: 2,
+                                value: 'Петя'
+                            },                              
+                        ]
+                    },
+                    {
+                        qid: 3,
+                        title: 'В каком времени следующая фраза: "Сегодня в театре показывают балет «Чиполлино»."',
+                        img: '',
+                        correct: 2,
+                        answ: [
+                            {
+                                id: 0,
+                                value: 'Прошлое'
+                            },
+                            {
+                                id: 1,
+                                value: 'Будущее'
+                            },
+                            {
+                                id: 2,
+                                value: 'Настоящее'
+                            },                              
+                        ]
+                    },
+                    {
+                        qid: 4,
+                        title: 'Отметь ложное утверждение.',
+                        img: '',
+                        correct: 3,
+                        answ: [
+                            {
+                                id: 0,
+                                value: 'После пятницы следует суббота.'
+                            },
+                            {
+                                id: 1,
+                                value: 'Октябрю предшествует сентябрь.'
+                            },
+                            {
+                                id: 2,
+                                value: 'Раньше бабочка была гусеницей.'
+                            },                              
+                            {
+                                id: 3,
+                                value: 'Сначала обед, потом завтрак.'
+                            },                              
+                        ]
+                    },
                 ]
             },
             {
@@ -399,6 +487,30 @@ export default class Test {
                     },
                     {
                         qid: 2,
+                        title: 'Расставь цифры в порядке убывания',
+                        correct: '4321',
+                        type: 'drag',
+                        answ: [
+                            {
+                                id: 0,
+                                value: '3',
+                            },
+                            {
+                                id: 1,
+                                value: '1',
+                            },
+                            {
+                                id: 2,
+                                value: '4',
+                            },
+                            {
+                                id: 3,
+                                value: '2',
+                            },
+                        ]
+                    },
+                    {
+                        qid: 3,
                         title: 'Отметь пример с ответом 7.',
                         img: '',
                         correct: 0,
@@ -421,7 +533,26 @@ export default class Test {
                             },                                
                         ]
                     },
-
+                    {
+                        qid: 4,
+                        title: 'Выбери верное.',
+                        img: '',
+                        correct: 0,
+                        answ: [
+                            {
+                                id: 0,
+                                value: '16 – 7 = 11 - 2'
+                            },
+                            {
+                                id: 1,
+                                value: '12 + 3 = 16 - 4'
+                            },
+                            {
+                                id: 2,
+                                value: '8 + 5 = 3 + 2'
+                            },                           
+                        ]
+                    },
                 ]
             },
             {
@@ -519,6 +650,30 @@ export default class Test {
                     },
                     {
                         qid: 4,
+                        title: 'Расставь цифры в порядке убывания',
+                        correct: '4321',
+                        type: 'drag',
+                        answ: [
+                            {
+                                id: 0,
+                                value: '3',
+                            },
+                            {
+                                id: 1,
+                                value: '1',
+                            },
+                            {
+                                id: 2,
+                                value: '4',
+                            },
+                            {
+                                id: 3,
+                                value: '2',
+                            },
+                        ]
+                    },
+                    {
+                        qid: 5,
                         title: 'В пенале 7 фломастеров. Сколько фломастеров не хватает до десятка?',
                         img: '',
                         correct: 2,
@@ -542,7 +697,7 @@ export default class Test {
                         ]
                     },
                     {
-                        qid: 5,
+                        qid: 6,
                         title: 'В течение учебного года 2 «А» класс использовал 5 десятков тетрадей в клетку, а тетрадей в линейку на 3 десятка меньше. Сколько всего тетрадей было использовано учениками 2 «А» класса?',
                         img: 't2-5.png',
                         correct: 2,
@@ -566,7 +721,7 @@ export default class Test {
                         ]
                     },
                     {
-                        qid: 6,
+                        qid: 7,
                         title: 'В математике числа, которые оканчиваются на 0, называются…',
                         img: '',
                         correct: 2,
@@ -649,6 +804,102 @@ export default class Test {
                             {
                                 id: 3,
                                 value: '18 раз'
+                            },                               
+                        ]
+                    },
+                    {
+                        qid: 2,
+                        title: 'Число, которое следует за числом 63.',
+                        img: '',
+                        correct: 0,
+                        answ: [
+                            {
+                                id: 0,
+                                value: '75'
+                            },
+                            {
+                                id: 1,
+                                value: '15'
+                            },
+                            {
+                                id: 2,
+                                value: '60'
+                            },
+                            {
+                                id: 3,
+                                value: '20'
+                            },                               
+                        ]
+                    },
+                    {
+                        qid: 3,
+                        title: 'В каком числе цифра 8 образует единицы?',
+                        img: '',
+                        correct: 0,
+                        answ: [
+                            {
+                                id: 0,
+                                value: '28'
+                            },
+                            {
+                                id: 1,
+                                value: '82'
+                            },
+                            {
+                                id: 2,
+                                value: '80'
+                            },
+                            {
+                                id: 3,
+                                value: '86'
+                            },                               
+                        ]
+                    },
+                    {
+                        qid: 4,
+                        title: 'Расставь цифры в порядке убывания',
+                        correct: '4321',
+                        type: 'drag',
+                        answ: [
+                            {
+                                id: 0,
+                                value: '3',
+                            },
+                            {
+                                id: 1,
+                                value: '1',
+                            },
+                            {
+                                id: 2,
+                                value: '4',
+                            },
+                            {
+                                id: 3,
+                                value: '2',
+                            },
+                        ]
+                    },
+                    {
+                        qid: 4,
+                        title: 'Отметь число, в котором десятков больше, чем единиц.',
+                        img: '',
+                        correct: 1,
+                        answ: [
+                            {
+                                id: 0,
+                                value: '16'
+                            },
+                            {
+                                id: 1,
+                                value: '78'
+                            },
+                            {
+                                id: 2,
+                                value: '56'
+                            },
+                            {
+                                id: 3,
+                                value: '06'
                             },                               
                         ]
                     },
@@ -739,6 +990,46 @@ export default class Test {
                             },                                
                         ]
                     },
+                    {
+                        qid: 3,
+                        title: '2д. 3ед. это',
+                        img: '',
+                        correct: 1,
+                        answ: [
+                            {
+                                id: 0,
+                                value: '25'
+                            },
+                            {
+                                id: 1,
+                                value: '23'
+                            },
+                            {
+                                id: 2,
+                                value: '32'
+                            },                              
+                        ]
+                    },
+                    {
+                        qid: 4,
+                        title: 'Число в котором 5 десятков и 2 единицы',
+                        img: '',
+                        correct: 1,
+                        answ: [
+                            {
+                                id: 0,
+                                value: '32'
+                            },
+                            {
+                                id: 1,
+                                value: '52'
+                            },
+                            {
+                                id: 2,
+                                value: '29'
+                            },                              
+                        ]
+                    },
 
                 ]
             },
@@ -815,6 +1106,62 @@ export default class Test {
                             },                            
                         ]
                     },
+                    {
+                        qid: 3,
+                        title: 'К 28 прибавляем 8',
+                        img: '',
+                        correct: 1,
+                        answ: [
+                            {
+                                id: 0,
+                                value: '28 - 8'
+                            },
+                            {
+                                id: 1,
+                                value: '28 + 8'
+                            },                            
+                            {
+                                id: 2,
+                                value: '36 - 8'
+                            },
+                            {
+                                id: 3,
+                                value: '43 - 10'
+                            },                            
+                        ]
+                    },
+                    {
+                        qid: 4,
+                        title: 'Какие из этих уравнений можно решить?',
+                        img: '',
+                        correct: 2,
+                        answ: [
+                            {
+                                id: 0,
+                                value: '1 + у = 0'
+                            },
+                            {
+                                id: 1,
+                                value: 'x + 54 = 46'
+                            },
+                            {
+                                id: 2,
+                                value: 'd + 0 = 46'
+                            },
+                            {
+                                id: 3,
+                                value: '75 + а = 98'
+                            },                               
+                            {
+                                id: 4,
+                                value: '26 + z = 14'
+                            },                               
+                            {
+                                id: 5,
+                                value: 'у + 37 = 63'
+                            },                               
+                        ]
+                    },
                 ]
             },
             {
@@ -872,33 +1219,25 @@ export default class Test {
                     },
                     {
                         qid: 2,
-                        title: 'Какие из этих уравнений можно решить?',
+                        title: 'Среди уравнений выбери то, решением которых является число 8.',
                         img: '',
-                        correct: 2,
+                        correct: 1,
                         answ: [
                             {
                                 id: 0,
-                                value: '1 + у = 0'
+                                value: 'у + 37 = 45'
                             },
                             {
                                 id: 1,
-                                value: 'x + 54 = 46'
-                            },
+                                value: 'x + 54 = 65'
+                            },                               
                             {
                                 id: 2,
-                                value: 'd + 0 = 46'
+                                value: '26 + z = 34'
                             },
                             {
                                 id: 3,
-                                value: '75 + а = 98'
-                            },                               
-                            {
-                                id: 4,
-                                value: '26 + z = 14'
-                            },                               
-                            {
-                                id: 5,
-                                value: 'у + 37 = 63'
+                                value: '45 + k = 53'
                             },                               
                         ]
                     },
@@ -944,30 +1283,6 @@ export default class Test {
                     },
                     {
                         qid: 5,
-                        title: 'Среди уравнений выбери то, решением которых является число 8.',
-                        img: '',
-                        correct: 1,
-                        answ: [
-                            {
-                                id: 0,
-                                value: 'у + 37 = 45'
-                            },
-                            {
-                                id: 1,
-                                value: 'x + 54 = 65'
-                            },                               
-                            {
-                                id: 2,
-                                value: '26 + z = 34'
-                            },
-                            {
-                                id: 3,
-                                value: '45 + k = 53'
-                            },                               
-                        ]
-                    },
-                    {
-                        qid: 6,
                         title: 'К какому уравнению подходит схематичный чертёж?',
                         img: 't3-6.png',
                         correct: 1,

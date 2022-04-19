@@ -319,6 +319,10 @@ body {
    border-radius: 5px;
    background-color: #424242;
 
+   @include phone-big {
+      height: auto;
+   }
+
    &:before {
       content: '';
       position: absolute;
@@ -350,18 +354,26 @@ body {
    }
 
    &__info {
-      width: 40%;
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-between;
 
       height: 100%;
-      padding: 10px;
+      padding: 10px 10px;
+
+      @include phone-big {
+         padding-top: 100px;
+      }
    }
 
    &__grade {
       font-size: 24px;
       color: #fff;
+
+      @include phone-big {
+         font-size: 16px;
+      }
    }
 
    &__back {

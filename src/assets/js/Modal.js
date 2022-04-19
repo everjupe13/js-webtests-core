@@ -81,7 +81,122 @@ export default class Modal {
         setTimeout(() => { init() }, 1000)
     }
 
+    fieldModals() {
+        console.time('sucсess')
+        this.tabs = new Object()
+        this.tabs.success = this.CreateNode({
+            node: 'div',
+            cssClass: 'modal-welcome',
+            parent: this.overflow
+        })
+        this.tabs.fail = this.CreateNode({
+            node: 'div',
+            cssClass: 'modal-welcome',
+            parent: this.overflow
+        })
 
+
+        this.tabs.success.lbl = this.CreateNode({
+            node: 'h4',
+            cssClass: 'modal-title',
+            parent: this.tabs.success,
+            content: 'Ответ правильный'
+        });
+        this.tabs.success.text = this.CreateNode({
+            node: 'p',
+            cssClass: 'modal-text',
+            parent: this.tabs.success,
+            content: 'Продолжай в том же духе'
+        })
+        this.tabs.success.img = this.CreateNode({
+            node: 'img',
+            cssClass: 'modal-img',
+            parent: this.tabs.success,
+        })
+        this.tabs.success.btns = this.CreateNode({
+            node: 'div',
+            cssClass: 'modal-btn__field',
+            parent: this.tabs.success,
+        })
+        this.tabs.success.next = this.CreateNode({
+            node: 'button',
+            cssClass: 'modal-btn',
+            parent: this.tabs.success.btns,
+            content: 'Дальше'
+        })
+
+
+        this.tabs.fail.lbl = this.CreateNode({
+            node: 'h4',
+            cssClass: 'modal-title',
+            parent: this.tabs.fail,
+            content: 'Ответ неправильный'
+        });
+        this.tabs.fail.text = this.CreateNode({
+            node: 'p',
+            cssClass: 'modal-text',
+            parent: this.tabs.fail,
+            content: 'Попытайся еще раз'
+        })
+        this.tabs.fail.img = this.CreateNode({
+            node: 'img',
+            cssClass: 'modal-img',
+            parent: this.tabs.fail,
+        })
+        this.tabs.fail.btns = this.CreateNode({
+            node: 'div',
+            cssClass: 'modal-btn__field',
+            parent: this.tabs.fail,
+        })
+        this.tabs.fail.rep = this.CreateNode({
+            node: 'button',
+            cssClass: 'modal-btn',
+            parent: this.tabs.fail.btns,
+            content: 'Повторить'
+        })
+        this.tabs.fail.next = this.CreateNode({
+            node: 'button',
+            cssClass: 'modal-btn',
+            parent: this.tabs.fail.btns,
+            content: 'Дальше'
+        })
+
+        this.tabs.success.lbl.classList.add('success')
+        this.tabs.fail.lbl.classList.add('fail')
+
+        this.tabs.success.img.setAttribute('src', `${document.location.protocol}//${document.location.host}/assets/img/happy.png`)
+        this.tabs.fail.img.setAttribute('src', `${document.location.protocol}//${document.location.host}/assets/img/sad.png`)
+
+        this.tabs.success.style.display = 'none'
+        this.tabs.fail.style.display = 'none'
+
+        const openModal = (el) => {
+                el.style.display = 'block'
+        }
+        const closeModal = (el) => {
+            el.style.display = 'none'
+        }
+
+
+
+        this.tabs.closeModal = (el) => {
+            this.close({
+                el: el,
+                callback: () => { closeModal(el) }
+            })
+        }
+
+        this.tabs.openModal = (el) => {
+            this.open({
+                el: el,
+                callback: () => { openModal(el) }
+            })
+        }
+
+        console.timeEnd('sucсess')
+        console.log('registered new Sucess Window')
+
+    }
 
     CreateNode(prop) {
         const node = document.createElement(prop.node)
